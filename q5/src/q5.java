@@ -14,10 +14,10 @@ public class q5 {
 
         nomeArq =nomeArq+".txt";
 
-        File f = new File (nomeArq);
+        
    
         try{
-
+            File f = new File (nomeArq);
             FileWriter fw = new FileWriter(f);
             PrintWriter arq = new PrintWriter(fw);
             textoSalvar = JOptionPane.showInputDialog("Escreva algo para salvar no arquivo: ");
@@ -30,6 +30,8 @@ public class q5 {
             BufferedWriter arq = new BufferedWriter(new FileWriter(nomeArq));
             arq.write( textoSalvar );
             arq.close();
+
+
         }
       
 
@@ -38,7 +40,7 @@ public class q5 {
             arq.write( textoSalvar );
             arq.close();
         } catch (Exception e) {
-           // e.printStackTrace();
+           // e.printStackTrace(); 
         }*/
     
     
