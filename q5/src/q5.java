@@ -25,7 +25,7 @@ public class q5 {
             arq.close();
 
         }catch(FileNotFoundException e){
-            System.out.println(nomeArq+" nao existe, será criado um novo");
+            JOptionPane.showMessageDialog(null, "Arquivo nao encontrado, sera criado um novo", "Arquivo nao encontrado", JOptionPane.PLAIN_MESSAGE);
             textoSalvar = JOptionPane.showInputDialog("Escreva algo para salvar no arquivo: ");
             BufferedWriter arq = new BufferedWriter(new FileWriter(nomeArq));
             arq.write( textoSalvar );
