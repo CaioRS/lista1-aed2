@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch q7",
+            "request": "launch",
+            "mainClass": "q7",
+            "projectName": "AED II_188ac962"
+        },
+        {
+            "type": "java",
             "name": "Launch q5",
             "request": "launch",
             "mainClass": "q5",
